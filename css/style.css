@@ -2,7 +2,16 @@ body{
     background-color: black;
 }
 
-#message{
-    color: white3
-    ;
+.ticket{
+    padding-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.btn-download button{
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid black;
 }

@@ -16,19 +16,19 @@ console.log(travelCost);
 let finalPrice;
 if(userAge < 18){
     const discount = travelCost * 20 / 100;
-    let finalPrice = travelCost - discount;
+    finalPrice = travelCost - discount;
     console.log(finalPrice);
 } else if(userAge > 65){
     const discount = travelCost * 40 / 100;
-    let finalPrice = travelCost - discount;
+    finalPrice = travelCost - discount;
     console.log(finalPrice);
 } else{
-    let finalPrice = travelCost;
+    finalPrice = travelCost
 }
 
 //arrotondare il costo a massimo 2 cifre decimali
 
 //scrivere il prezzo finale
-const userMessage = 'Il costo del tuo biglietto sarà ' + finalPrice;
+const userMessage = 'Il costo del tuo biglietto sarà €' + finalPrice;
 
 document.getElementById("message").innerHTML = userMessage;
