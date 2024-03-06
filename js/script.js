@@ -25,10 +25,13 @@ if(userAge < 18){
 } else{
     finalPrice = travelCost
 }
+console.log(finalPrice)
 
 //arrotondare il costo a massimo 2 cifre decimali
+const roundedPrice = finalPrice.toFixed(2);
+console.log(roundedPrice);
 
 //scrivere il prezzo finale
-const userMessage = 'Il costo del tuo biglietto sarà €' + finalPrice;
+const userMessage = 'Il costo del tuo biglietto sarà €' + roundedPrice;
 
 document.getElementById("message").innerHTML = userMessage;
